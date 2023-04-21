@@ -1,0 +1,80 @@
+div.box {
+
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+
+    text-align: center;
+    align-items: center;
+
+    width: 50%; /* Set the initial width */
+    height: 500px;
+  max-width: 100%; /* Set the maximum width */
+  padding-bottom: 10%; /* Set the padding as a percentage of the width to achieve a 1:1 aspect ratio */
+  background-color: #f2f2f2; /* Set a background color for the box */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 5px
+  }
+  
+  input[type="number"] {
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="button"] {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #averageBox {
+    
+    display: none;
+    position: relative;
+    top: -100px;
+    border-radius: 5px;
+    width: 260px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #aef0c7;
+  }
+  @media only screen and (max-width: 600px)
+  {
+
+    form{
+        margin-left: 0px;
+    }
+
+    #averageBox {
+    
+        display: none;
+        position: relative;
+        top: -95px;
+        left: 0px;
+        border-radius: 5px;
+        width: 150PX;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        background-color: #aef0c7;
+      }
+  }
+    
