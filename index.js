@@ -1,7 +1,7 @@
 function calculateAverage() {
-    let prelimGrade = parseInt(document.getElementById("prelimGrade").value);
-    let midtermGrade = parseInt(document.getElementById("midtermGrade").value);
-    let finalsGrade = parseInt(document.getElementById("finalsGrade").value);
+    let prelimGrade = parseFloat(document.getElementById("prelimGrade").value);
+    let midtermGrade = parseFloat(document.getElementById("midtermGrade").value);
+    let finalsGrade = parseFloat(document.getElementById("finalsGrade").value);
     let averageGrade = (prelimGrade + midtermGrade + finalsGrade) / 3;
     
     if(averageGrade>=96){
