@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="index1.css">
     <title>Average Grade</title>
 </head>
-<body>
+<body background-color="black">
     <center><div class="box">
-        <h2>Grades</h2>
+        <h2>General Average</h2>
         <center>  <form>
           <label for="prelimGrade">Prelim:</label>
-          <input type="number" id="prelimGrade" name="prelimGrade" required min="0" max="100"><br><br>
+          <input type="number" id="prelimGrade" name="prelimGrade" min="0" max="100" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4"> <br><br>
           <label for="midtermGrade">Midterm:</label>
-          <input type="number" id="midtermGrade" name="midtermGrade" required min="0" max="100"><br><br>
+          <input type="number" id="midtermGrade" name="midtermGrade" min="0" max="100" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4"><br><br>
           <label for="finalsGrade">Finals:</label>
-          <input type="number" id="finalsGrade" name="finalsGrade" required min="0" max="100"><br><br>
+          <input type="number" id="finalsGrade" name="finalsGrade" min="0" max="100" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4"><br><br>
         <center> <input type="button" value="Calculate Average" onclick="calculateAverage()">
           <input type="button" value="Reset" onclick="resetForm()"></center> 
         </div>
         </form>
         <div id="averageBox"></div>
+        
       </div>
     </center>
 </body>
